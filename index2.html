@@ -1,0 +1,307 @@
+<!-- Hello World -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+    <!-- GoogleFont -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins"
+    />
+    <!-- Tailwind -->
+    <link
+      href="https://unpkg.com/tailwindcss@%5E2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- RemixIcon -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <title>Warisara's Portfolio</title>
+  </head>
+  <body id="app">
+    <!-- <div id="app"></div> -->
+    <!-- Navbar -->
+    <div class="bg-white shadow fixed z-50 w-full">
+      <div
+        class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
+      >
+        <div class="flex mb-4 font-medium items-center">
+          <a class="ri-mail-line mr-5"></a>
+          <a href="mailto:wariskhrua246@gmail.com" class="hover:text-green-400"
+            >wariskhrua246@gmail.com</a
+          >
+        </div>
+        <div
+          class="md:ml-auto flex flex-wrap items-center text-base justify-center"
+        >
+          <a href="/" class="mr-5 hover:text-green-400">Home</a>
+          <a href="#resume" class="mr-5 hover:text-green-400">Resume</a>
+          <a href="#works" class="mr-5 hover:text-green-400">Works</a>
+          <a href="#activity" class="mr-5 hover:text-green-400">Activity</a>
+          <!-- <a href="mailto:wariskhrua246@gmail.com" class="mr-5 hover:text-green-400">Contact</a> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Intro -->
+    <div class="sm:px-4 px-4">
+      <a id="resume"></a>
+      <div class="flex flex-col text-center w-full mb-12">
+        <img class="pt-36 mx-auto" src="images/memoji.png" />
+        <div class="text-3xl sm:text-2xl font-medium title-font pt-6 mb-4">
+          Hi, I'm Warisara Khruajinli
+        </div>
+        <p class="lg:w-1/3 mx-auto leading-relaxed text-xs mb-4">
+          I am a third-year student in School Information Technology major at
+          KMUTT with third-year experience in website development gained from
+          events, and faculty's camp.
+        </p>
+        <a
+          href="https://drive.google.com/file/d/1J5nhINSEfgLSWp0XZkgByZY-s2XYeNTs/view?usp=sharing"
+          class="text-green-300 hover:text-white border-2 border-green-300 hover:bg-green-300 rounded-full transition duration-200 mx-auto px-4 py-2"
+        >
+          <i class="ri-download-2-line"></i> Resume
+        </a>
+      </div>
+
+      <!-- Content -->
+      <a id="works"></a>
+      <div class="bg-gray-100 lg:pb-12">
+        <h1 id="works" class="text-2xl text-center pt-12">Works</h1>
+        <div class="pt-6 mx-auto lg:px-32 grid sm:grid-cols-3 gap-2.5">
+          <div class="relative">
+            <a
+              href="https://drive.google.com/drive/folders/1lfOpGiRhUyNWnGuK0U23mQoTMiwec2Lv?usp=sharing"
+            >
+              <img
+                src="images/HelloThailand.jpg"
+                class="h-52 w-full rounded-lg object-cover object-center absolute"
+              />
+              <div
+                class="relative w-full h-52 bg-green-300 rounded-lg opacity-0 hover:opacity-100 transition duration-300 flex items-center justify-center"
+              >
+                <p class="text-white text-2xl text-center p-2">
+                  INT102 Hello Thailand Final Project
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <div class="relative">
+            <a
+              href="https://drive.google.com/drive/u/0/folders/13H2qPgvnX1IFm7leGUQFyyc2YzSd11qn"
+            >
+              <img
+                src="images/wipcamp12.jpg"
+                class="h-52 w-full rounded-lg object-cover object-center absolute"
+              />
+              <div
+                class="relative w-full h-52 bg-green-300 rounded-lg opacity-0 hover:opacity-100 transition duration-300 flex items-center justify-center"
+              >
+                <p class="text-white text-2xl text-center p-2">WIP Camp #12</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="relative">
+            <a
+              href="https://drive.google.com/drive/u/0/folders/174VPFluVcaY-cf4RFC3CuKZBEktnRrIU"
+            >
+              <img
+                src="images/career.png"
+                class="h-52 w-full rounded-lg object-cover object-center absolute"
+              />
+              <div
+                class="relative w-full h-52 bg-green-300 rounded-lg opacity-0 hover:opacity-100 transition duration-300 flex items-center justify-center"
+              >
+                <p class="text-white text-2xl text-center p-2">
+                  INT104 SIT Career Fair Project
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <div class="relative">
+            <a
+              href="https://drive.google.com/drive/u/0/folders/1Mpd3aoPZiqmLykO4L8nNkOL60jh6EYSn"
+            >
+              <img
+                src="images/UserExperience.png"
+                class="h-52 w-full rounded-lg object-cover object-center absolute"
+              />
+              <div
+                class="relative w-full h-52 bg-green-300 rounded-lg opacity-0 hover:opacity-100 transition duration-300 flex items-center justify-center"
+              >
+                <p class="text-white text-2xl text-center p-2">
+                  INT104 User Experience Final Project
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <div class="relative">
+            <a
+              href="https://drive.google.com/drive/u/0/folders/1ToH6aDednoxfOIjLyLGrR32RNcAuvoMi"
+            >
+              <img
+                src="images/helloDolphin.png"
+                class="h-52 w-full rounded-lg object-cover object-center absolute"
+              />
+              <div
+                class="relative w-full h-52 bg-green-300 rounded-lg opacity-0 hover:opacity-100 transition duration-300 flex items-center justify-center"
+              >
+                <p class="text-white text-2xl text-center p-2">
+                  Hello World Dolphin
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <div class="relative">
+            <a
+              href="https://drive.google.com/drive/u/0/folders/1g01_B4IcXf03td-_Yw06rvwFU5th3bL8"
+            >
+              <img
+                src="images/wongnok.jpg"
+                class="h-52 w-full rounded-lg object-cover object-center absolute"
+              />
+              <div
+                class="relative w-full h-52 bg-green-300 rounded-lg opacity-0 hover:opacity-100 transition duration-300 flex items-center justify-center"
+              >
+                <p class="text-white text-2xl text-center p-2">
+                  INT222 Integrated Project II
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div id="works" class="text-base text-center pb-4 pt-12">
+          <a
+            href="https://drive.google.com/drive/u/0/folders/1xx49ZQtAFh4aSGSVcJDu1jMQ_QpdT6Ix"
+            class="hover:text-green-400"
+            >See more experiences <i class="ri-arrow-right-line"></i
+          ></a>
+        </div>
+      </div>
+
+      <!-- Activity -->
+      <a id="activity"></a>
+      <div class="pt-12 lg:pb-4 lg:flex lg:justify-center">
+        <div class="flex flex-col">
+          <h1 class="text-center text-2xl mx-auto mb-4">Activity</h1>
+          <div
+            class="bg-white lg:mx-8 lg:flex lg:max-w-7xl lg:shadow-lg lg:rounded-lg"
+          >
+            <div class="lg:w-1/3">
+              <div
+                class="h-64 bg-cover bg-center lg:rounded-l-lg lg:h-full"
+                style="background-image: url('images/Freshygame.JPG')"
+              ></div>
+            </div>
+
+            <div class="py-6 px-6 max-w-xl lg:max-w-5xl lg:w-1/2">
+              <h2 class="text-xl text-gray-800 font-bold">Freshy Game</h2>
+              <p
+                class="mt-4 text-xs text-gray-600 text-justify leading-relaxed"
+              >
+                KMUTT student council hosts Freshy-GAME for 1st year KMUTT
+                students annually. Students from the different departments will
+                be assigned into different groups of colors. Activities consist
+                of sports, traditional sports, cheering teams, cheerleaders, and
+                parades.
+              </p>
+            </div>
+
+            <div class="text-center sm:pl-24 my-auto" style="font-size: 32px">
+              <a
+                href="https://drive.google.com/drive/u/0/folders/1Q6qv7YiLDmen7FbbZbGDoHJEWyfqPd_6"
+                class="ri-arrow-right-up-line text-green-400 hover:text-green-600"
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:pb-4 lg:flex lg:justify-center">
+        <div
+          class="bg-white lg:mx-8 lg:flex lg:max-w-7xl lg:shadow-lg lg:rounded-lg"
+        >
+          <div class="lg:w-1/3">
+            <div
+              class="h-64 bg-cover bg-center lg:rounded-l-lg lg:h-full"
+              style="background-image: url('images/Sitzero.jpeg')"
+            ></div>
+          </div>
+
+          <div class="py-6 px-6 max-w-xl lg:max-w-5xl lg:w-1/2">
+            <h2 class="text-xl text-gray-800 font-bold">SIT Zero Camp #3</h2>
+            <p class="mt-4 text-xs text-gray-600 text-justify leading-relaxed">
+              Camp project to welcome new students The Faculty of Information
+              Technology (SIT) has an Information Technology (IT) program, a
+              Computer Science (CS) program, and a Digital Service Innovation
+              (DSI) program to build relationships between seniors. Juniors in
+              the faculty
+            </p>
+          </div>
+
+          <div class="text-center sm:pl-24 my-auto" style="font-size: 32px">
+            <a
+              href="https://drive.google.com/drive/u/0/folders/1BSnUHjjxEQS392UZJDFTNOCIGIYGiNR3"
+              class="ri-arrow-right-up-line text-green-400 hover:text-green-600"
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:flex lg:justify-center">
+        <div
+          class="bg-white lg:mx-8 lg:flex lg:max-w-7xl lg:shadow-lg lg:rounded-lg"
+        >
+          <div class="lg:w-1/3">
+            <div
+              class="h-64 bg-cover bg-center lg:rounded-l-lg lg:h-full"
+              style="background-image: url('images/IT3k.jpeg')"
+            ></div>
+          </div>
+
+          <div class="py-6 px-6 max-w-xl lg:max-w-5xl lg:w-1/2">
+            <h2 class="text-xl text-gray-800 font-bold">IT 3K #17</h2>
+            <p class="mt-4 text-xs text-gray-600 text-justify leading-relaxed">
+              The 3 King Mongkut's University of Technology (IT) sports
+              competition aims to encourage students to use sports activities to
+              build relationships between students. And learn to work as a team,
+              know how to lose, know how to win, know forgiveness, have
+              sportsmanship. It's a good use of time.
+            </p>
+          </div>
+
+          <div class="text-center sm:pl-24 my-auto" style="font-size: 32px">
+            <a
+              href="https://drive.google.com/drive/u/0/folders/1MhyryDS0N9t_xMGCxgYxqw4LMRYfrz3O"
+              class="ri-arrow-right-up-line text-green-400 hover:text-green-600"
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div id="works" class="text-base text-center pt-12 pb-28">
+        <a
+          href="https://drive.google.com/drive/u/0/folders/1S2AEoDqWD5xilJOyuRI6IAx3-_th0CKm"
+          class="hover:text-green-400"
+          >See more Activities <i class="ri-arrow-right-line"></i
+        ></a>
+      </div>
+    </div>
+  </body>
+</html>
+
+<style>
+  #app {
+    font-family: Poppins, Helvetica, Arial, sans-serif;
+    background-color: #f9fafb;
+  }
+</style>

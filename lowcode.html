@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+
+    <!-- GoogleFont -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins"
+    />
+    <!-- RemixIcon -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- Tailwind -->
+    <link href="/dist/output.css" rel="stylesheet" />
+    <title>Warisara's Portfolio</title>
+  </head>
+  <body id="app">
+    <div class="grid grid-cols-12">
+      <div
+        class="container px-3 py-[50px] mx-auto col-span-12 lg:col-span-10 lg:col-start-2 grid grid-cols-12"
+      >
+        <div class="col-span-6">
+          <div class="flex gap-2">
+            <button
+              onclick="history.back()"
+              class="bg-green-400 w-6 h-6 rounded-md"
+            >
+              <i class="text-white ri-arrow-left-line"></i>
+            </button>
+            <p class="text-base">Previous</p>
+          </div>
+        </div>
+        <div class="col-span-6">
+          <div class="flex justify-end gap-2 lg:gap-4">
+            <div>
+              <img class="w-6" src="images//icons/phone-icon.svg" alt="" />
+            </div>
+            <div>
+              <img class="w-6" src="images//icons/email-icon.svg" alt="" />
+            </div>
+            <div>
+              <img class="w-6" src="images//icons/facebook-icon.svg" alt="" />
+            </div>
+            <div>
+              <img class="w-6" src="images//icons/linkedin.svg" alt="" />
+            </div>
+            <div>
+              <img class="w-6" src="images//icons/github-icon.svg" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="col-span-12 lg:mt-8">
+          <h2 class="font-bold text-2xl">
+            Get to know Low-Code Workshop 2023 By MFEC
+          </h2>
+          <p class="text-gray-300 text-xs mt-2">#TECHNOLOGY #SERVICENOW</p>
+          <p class="mt-4">
+            Learn software development with the ServiceNow platform from the
+            definition, design, change, and improvement of the database,
+            workflows, roles, experience, portals, workspace, and reporting from
+            the information on the platform.
+          </p>
+          <div class="grid grid-cols-12 gap-4 mt-8">
+            <div class="col-span-12 lg:col-span-6">
+              <div>
+                <img
+                  class="lg:h-[435px] object-cover"
+                  src="images//workshop-lowcode.jpeg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="col-span-12 lg:col-span-6">
+              <div>
+                <img
+                  class="lg:h-[435px] object-cover"
+                  src="images//workshop-lowcode-2.jpeg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <!-- footer -->
+          <footer class="mt-12">
+            <div class="grid grid-cols-12">
+              <div class="container mx-auto col-span-12">
+                <hr />
+                <div class="flex gap-1 mt-6 text-[#6E6D79]">
+                  <i class="text-base ri-copyright-line"></i>
+                  <p>2023 Warisara Khruajinli</p>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<style>
+  #app {
+    font-family: Poppins, Helvetica, Arial, sans-serif;
+    background-color: #f9fafb;
+  }
+</style>
