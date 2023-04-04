@@ -26,13 +26,13 @@
       <!-- Navbar -->
       <div>
         <!-- Mobile -->
-        <div class="md:hidden grid grid-cols-12">
+        <div class="grid grid-cols-12 md:hidden">
           <div class="col-span-12">
             <div
               class="w-full h-[65px] bg-white shadow py-[15px] px-[12px] flex justify-between items-center"
             >
-              <div class="flex gap-2 items-center">
-                <div class="ri-mail-line text-2xl"></div>
+              <div class="flex items-center gap-2">
+                <div class="text-2xl ri-mail-line"></div>
                 <a
                   target="_blank"
                   href="mailto:warisara.khrua@gmail.com"
@@ -43,12 +43,12 @@
 
               <button
                 onclick="showMenuList()"
-                class="ri-menu-3-line menu-btn text-2xl"
+                class="text-2xl ri-menu-3-line menu-btn"
               ></button>
             </div>
             <!-- menu list -->
-            <div class="menu hidden bg-white">
-              <ul class="text-center bg-white shadow pb-6 z-20">
+            <div class="hidden bg-white menu">
+              <ul class="z-20 pb-6 text-center bg-white shadow">
                 <li class="p-2">
                   <a href="" class="text-base">My works</a>
                 </li>
@@ -58,7 +58,7 @@
                 <li class="p-2">
                   <a
                     href=""
-                    class="text-green-300 hover:text-white border-2 border-green-300 hover:bg-green-300 rounded-full transition duration-200 mx-auto px-4 py-2"
+                    class="px-4 py-2 mx-auto text-green-300 transition duration-200 border-2 border-green-300 rounded-full hover:text-white hover:bg-green-300"
                   >
                     <i class="ri-download-2-line"></i> Resume
                   </a>
@@ -69,16 +69,16 @@
         </div>
 
         <!-- Desktop -->
-        <div class="hidden md:grid grid-cols-12">
+        <div class="hidden grid-cols-12 md:grid">
           <div class="col-span-12">
             <div
               class="py-[15px] px-3 h-[75px] bg-white w-full shadow fixed z-50 flex items-center"
             >
               <div
-                class="container mx-auto flex flex-wrap flex-col md:flex-row items-center"
+                class="container flex flex-col flex-wrap items-center mx-auto md:flex-row"
               >
-                <div class="flex font-medium items-center">
-                  <a class="ri-mail-line mr-5"></a>
+                <div class="flex items-center font-medium">
+                  <a class="mr-5 ri-mail-line"></a>
                   <a
                     href="mailto:warisara.khrua@gmail.com"
                     class="hover:text-green-400"
@@ -86,7 +86,7 @@
                   >
                 </div>
                 <div
-                  class="md:ml-auto flex flex-wrap items-center text-base justify-center"
+                  class="flex flex-wrap items-center justify-center text-base md:ml-auto"
                 >
                   <a href="/" class="mr-5 hover:text-green-400">Home</a>
                   <a href="#resume" class="mr-5 hover:text-green-400">Resume</a>
@@ -98,7 +98,7 @@
                   <!-- <a href="#activity" class="hover:text-green-400">Contact Me</a> -->
                   <a
                     href="#contact"
-                    class="rounded-full text-green-300 hover:text-white border-2 border-green-300 hover:bg-green-300 transition duration-200 mx-auto px-4 py-2"
+                    class="px-4 py-2 mx-auto text-green-300 transition duration-200 border-2 border-green-300 rounded-full hover:text-white hover:bg-green-300"
                   >
                     Contact Me
                   </a>
@@ -109,7 +109,7 @@
         </div>
       </div>
 
-      <div class="grid grid-cols-12 justify-center">
+      <div class="grid justify-center grid-cols-12">
         <div class="col-span-12 px-3 py-[50px] lg:px-0 lg:py-[104px]">
           <!-- Profile -->
           <a id="resume"></a>
@@ -123,27 +123,32 @@
                 <h2 class="mt-4 text-xl font-bold">
                   Hi, I'm Warisara Khruajinli
                 </h2>
-                <p class="text-xs mt-2">
+                <p class="mt-2 text-xs">
                   I am a student in School Information Technology major at the
                   King Mongkut's University of Technology Thonburi. I'm
                   interested in technology and have experience in website
                   development gained from the internship, part-time, events, and
                   faculty camp.
                 </p>
-                <a
+                <!-- <a
                   href="https://drive.google.com/file/d/12OTu8MjfFAJceeR7QRq8q80M_nJ8cUGR/view?usp=sharing"
+                  target="_blank"
+                > -->
+                <a
+                  href="https://drive.google.com/file/d/1FXPYQp-5ICr67GNicWGxBwzN_9Ecrv8l/view?usp=sharing"
                   target="_blank"
                 >
                   <button
-                    class="mt-4 text-green-300 hover:text-white border-2 border-green-300 hover:bg-green-300 rounded-full transition duration-200 mx-auto px-4 py-2"
+                    class="px-4 py-2 mx-auto mt-4 text-green-300 transition duration-200 border-2 border-green-300 rounded-full hover:text-white hover:bg-green-300"
                   >
                     <i class="ri-download-2-line"></i> Resume
                   </button>
                 </a>
+                <!--  -->
                 <div
-                  class="flex gap-x-2 justify-center items-center mt-8 animate-bounce"
+                  class="flex items-center justify-center mt-8 gap-x-2 animate-bounce"
                 >
-                  <i class="text-base ri-arrow-down-line text-gray-400"></i>
+                  <i class="text-base text-gray-400 ri-arrow-down-line"></i>
                   <a href="#works" class="text-sm text-gray-400">
                     Scroll down to see my works!
                   </a>
@@ -163,7 +168,7 @@
                   <h2 class="text-3xl font-bold">MY WORKS</h2>
                   <p class="text-xs">awesome projects</p>
                 </div>
-                <div class="flex gap-4 justify-center flex-wrap text-sm my-9">
+                <div class="flex flex-wrap justify-center gap-4 text-sm my-9">
                   <button data-tab-target="#all">All</button>
                   <button data-tab-target="#projects">Projects</button>
                   <button data-tab-target="#parttime">Part-Time</button>
@@ -176,7 +181,7 @@
                   <div
                     id="internship"
                     data-tab-content
-                    class="active col-span-12 md:col-span-4"
+                    class="col-span-12 active md:col-span-4"
                   >
                     <div class="relative">
                       <a href="decoder.html">
@@ -187,7 +192,7 @@
                         <div
                           class="relative w-full lg:h-[350px] h-[250px] bg-green-300 rounded-md opacity-0 hover:opacity-100 flex items-center justify-center"
                         >
-                          <p class="text-white text-2xl text-center p-2">
+                          <p class="p-2 text-2xl text-center text-white">
                             The Decoder
                           </p>
                         </div>
@@ -198,7 +203,7 @@
                   <div
                     id="internship"
                     data-tab-content
-                    class="active col-span-12 md:col-span-4"
+                    class="col-span-12 active md:col-span-4"
                   >
                     <div class="relative">
                       <a href="ramakien.html">
@@ -209,7 +214,7 @@
                         <div
                           class="relative w-full lg:h-[350px] h-[250px] bg-green-300 rounded-md opacity-0 hover:opacity-100 flex items-center justify-center"
                         >
-                          <p class="text-white text-2xl text-center p-2">
+                          <p class="p-2 text-2xl text-center text-white">
                             CS2 x Ramakien
                           </p>
                         </div>
@@ -220,7 +225,7 @@
                   <div
                     id="internship"
                     data-tab-content
-                    class="active col-span-12 md:col-span-4"
+                    class="col-span-12 active md:col-span-4"
                   >
                     <div class="relative">
                       <a href="blocky.html">
@@ -231,7 +236,7 @@
                         <div
                           class="relative w-full lg:h-[350px] h-[250px] bg-green-300 rounded-md opacity-0 hover:opacity-100 flex items-center justify-center"
                         >
-                          <p class="text-white text-2xl text-center p-2">
+                          <p class="p-2 text-2xl text-center text-white">
                             The Blockly Lab
                           </p>
                         </div>
@@ -242,7 +247,7 @@
                   <div
                     id="internship"
                     data-tab-content
-                    class="active col-span-12 md:col-span-4"
+                    class="col-span-12 active md:col-span-4"
                   >
                     <div class="relative">
                       <a href="press.html">
@@ -253,7 +258,7 @@
                         <div
                           class="relative w-full lg:h-[350px] h-[250px] bg-green-300 rounded-md opacity-0 hover:opacity-100 flex items-center justify-center"
                         >
-                          <p class="text-white text-2xl text-center p-2">
+                          <p class="p-2 text-2xl text-center text-white">
                             Press conference page
                           </p>
                         </div>
@@ -264,7 +269,7 @@
                   <div
                     id="parttime"
                     data-tab-content
-                    class="active col-span-12 md:col-span-4"
+                    class="col-span-12 active md:col-span-4"
                   >
                     <div class="relative">
                       <a href="thinkdq.html">
@@ -275,7 +280,7 @@
                         <div
                           class="relative w-full lg:h-[350px] h-[250px] bg-green-300 rounded-md opacity-0 hover:opacity-100 flex items-center justify-center"
                         >
-                          <p class="text-white text-2xl text-center p-2">
+                          <p class="p-2 text-2xl text-center text-white">
                             Think Digital Landing
                           </p>
                         </div>
@@ -286,7 +291,7 @@
                   <div
                     id="projects"
                     data-tab-content
-                    class="active col-span-12 md:col-span-4"
+                    class="col-span-12 active md:col-span-4"
                   >
                     <div class="relative">
                       <a href="punmaew.html">
@@ -297,7 +302,7 @@
                         <div
                           class="relative w-full lg:h-[350px] h-[250px] bg-green-300 rounded-md opacity-0 hover:opacity-100 flex items-center justify-center"
                         >
-                          <p class="text-white text-2xl text-center p-2">
+                          <p class="p-2 text-2xl text-center text-white">
                             Punmaew Web Application (Senior-Project)
                           </p>
                         </div>
@@ -308,7 +313,7 @@
                   <div
                     id="parttime"
                     data-tab-content
-                    class="active col-span-12 md:col-span-4"
+                    class="col-span-12 active md:col-span-4"
                   >
                     <div class="relative">
                       <a href="prompkai.html">
@@ -319,7 +324,7 @@
                         <div
                           class="relative w-full lg:h-[350px] h-[250px] bg-green-300 rounded-md opacity-0 hover:opacity-100 flex items-center justify-center"
                         >
-                          <p class="text-white text-2xl text-center p-2">
+                          <p class="p-2 text-2xl text-center text-white">
                             Prompkai E-commerce
                           </p>
                         </div>
@@ -330,7 +335,7 @@
                   <div
                     id="parttime"
                     data-tab-content
-                    class="active col-span-12 md:col-span-4"
+                    class="col-span-12 active md:col-span-4"
                   >
                     <div class="relative">
                       <a href="sena.html">
@@ -341,7 +346,7 @@
                         <div
                           class="relative w-full lg:h-[350px] h-[250px] bg-green-300 rounded-md opacity-0 hover:opacity-100 flex items-center justify-center"
                         >
-                          <p class="text-white text-2xl text-center p-2">
+                          <p class="p-2 text-2xl text-center text-white">
                             Sena
                           </p>
                         </div>
@@ -352,7 +357,7 @@
                   <div
                     id="uxui"
                     data-tab-content
-                    class="active col-span-12 md:col-span-4"
+                    class="col-span-12 active md:col-span-4"
                   >
                     <div class="relative">
                       <a href="wipcamp12.html">
@@ -363,7 +368,7 @@
                         <div
                           class="relative w-full lg:h-[350px] h-[250px] bg-green-300 rounded-md opacity-0 hover:opacity-100 flex items-center justify-center"
                         >
-                          <p class="text-white text-2xl text-center p-2">
+                          <p class="p-2 text-2xl text-center text-white">
                             WIP Camp #12 : Ways to IT Professional Camp
                           </p>
                         </div>
@@ -374,7 +379,7 @@
                   <div
                     id="uxui"
                     data-tab-content
-                    class="active col-span-12 md:col-span-4"
+                    class="col-span-12 active md:col-span-4"
                   >
                     <div class="relative">
                       <a href="helloDolphin.html">
@@ -385,7 +390,7 @@
                         <div
                           class="relative w-full h-[250px] lg:h-[350px] bg-green-300 rounded-md opacity-0 hover:opacity-100 flex items-center justify-center"
                         >
-                          <p class="text-white text-2xl text-center p-2">
+                          <p class="p-2 text-2xl text-center text-white">
                             Hello World Project 2020
                           </p>
                         </div>
@@ -396,7 +401,7 @@
                   <div
                     id="projects"
                     data-tab-content
-                    class="active col-span-12 md:col-span-4"
+                    class="col-span-12 active md:col-span-4"
                   >
                     <div class="relative">
                       <a href="helloThailand.html">
@@ -407,7 +412,7 @@
                         <div
                           class="relative w-full h-[250px] lg:h-[350px] bg-green-300 rounded-md opacity-0 hover:opacity-100 flex items-center justify-center"
                         >
-                          <p class="text-white text-2xl text-center p-2">
+                          <p class="p-2 text-2xl text-center text-white">
                             Hello Thailand Project
                           </p>
                         </div>
@@ -418,7 +423,7 @@
                   <div
                     id="uxui"
                     data-tab-content
-                    class="active col-span-12 md:col-span-4"
+                    class="col-span-12 active md:col-span-4"
                   >
                     <div class="relative">
                       <a href="sitCareer.html">
@@ -429,7 +434,7 @@
                         <div
                           class="relative w-full h-[250px] lg:h-[350px] bg-green-300 rounded-md opacity-0 hover:opacity-100 flex items-center justify-center"
                         >
-                          <p class="text-white text-2xl text-center p-2">
+                          <p class="p-2 text-2xl text-center text-white">
                             SIT Career Fair Project
                           </p>
                         </div>
@@ -440,7 +445,7 @@
                   <div
                     id="uxui"
                     data-tab-content
-                    class="active col-span-12 md:col-span-4"
+                    class="col-span-12 active md:col-span-4"
                   >
                     <div class="relative">
                       <a href="uxProject.html">
@@ -451,7 +456,7 @@
                         <div
                           class="relative w-full h-[250px] lg:h-[350px] bg-green-300 rounded-md opacity-0 hover:opacity-100 flex items-center justify-center"
                         >
-                          <p class="text-white text-2xl text-center p-2">
+                          <p class="p-2 text-2xl text-center text-white">
                             User Experience Project
                           </p>
                         </div>
@@ -462,7 +467,7 @@
                   <div
                     id="projects"
                     data-tab-content
-                    class="active col-span-12 md:col-span-4"
+                    class="col-span-12 active md:col-span-4"
                   >
                     <div class="relative">
                       <a href="integrated.html">
@@ -473,7 +478,7 @@
                         <div
                           class="relative w-full h-[250px] lg:h-[350px] bg-green-300 rounded-md opacity-0 hover:opacity-100 flex items-center justify-center"
                         >
-                          <p class="text-white text-2xl text-center p-2">
+                          <p class="p-2 text-2xl text-center text-white">
                             Integrated Project II
                           </p>
                         </div>
@@ -484,7 +489,7 @@
                   <div
                     id="activity"
                     data-tab-content
-                    class="active col-span-12 md:col-span-4"
+                    class="col-span-12 active md:col-span-4"
                   >
                     <div class="relative">
                       <a href="lowcode.html">
@@ -495,7 +500,7 @@
                         <div
                           class="relative w-full h-[250px] lg:h-[350px] bg-green-300 rounded-md opacity-0 hover:opacity-100 flex items-center justify-center"
                         >
-                          <p class="text-white text-2xl text-center p-2">
+                          <p class="p-2 text-2xl text-center text-white">
                             Get to know Low-Code Workshop 2023 By MFEC
                           </p>
                         </div>
@@ -512,12 +517,12 @@
           <!-- CONTACT -->
           <a id="contact"></a>
           <div class="grid grid-cols-12 text-center">
-            <div class="container mx-auto col-span-12">
+            <div class="container col-span-12 mx-auto">
               <div>
                 <h2 class="text-3xl font-bold">CONTACTS</h2>
                 <p class="text-xs">contact information</p>
               </div>
-              <div class="justify-center flex gap-6 mt-8">
+              <div class="flex justify-center gap-6 mt-8">
                 <div class="phone-contact">
                   <a href="tel:0629416444">
                     <img
@@ -579,7 +584,7 @@
           <!-- footer -->
           <footer class="mt-12">
             <div class="grid grid-cols-12">
-              <div class="container mx-auto col-span-12">
+              <div class="container col-span-12 mx-auto">
                 <hr />
                 <div class="flex gap-1 mt-6 text-[#6E6D79]">
                   <i class="text-base ri-copyright-line"></i>
